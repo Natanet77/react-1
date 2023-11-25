@@ -1,0 +1,48 @@
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact__info--block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+}
+
+.contact__info--image {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.contact__info--info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact__info--sublock {
+  display: flex;
+  gap: 16px;
+}
+
+.contact__info--text {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.contact__info--text:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+.contact__info--about {
+  font-size: 16px;
+  color: #000;
+}
